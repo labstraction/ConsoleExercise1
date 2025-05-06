@@ -12,6 +12,12 @@ namespace ConsoleExercise1
        public void WriteStocazzo()
         {
             Console.WriteLine("Stocazzo");
+            WriteSticazzi();
+        }
+
+        public void WriteSticazzi()
+        {
+            Console.WriteLine("Sticazzi!");
         }
     }
 }
