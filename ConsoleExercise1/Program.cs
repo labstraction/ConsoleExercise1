@@ -100,12 +100,29 @@ internal class Program
 
         //StrangeFizzBuzz();
 
-        for (int i = 0; i < args.Length; i++)
-        {
-            Console.WriteLine(args[i]);
-        }
+        //GuessNumber();
 
-        GuessNumber();
+
+        if (args.Length != 2)
+        {
+            Console.WriteLine("Sevono due argomeneti");
+            return;
+        }
+        CountOccurrences(args[0], args[1]);
+    }
+
+    static void CountOccurrences(string source, string value)
+    {
+        var array = source.Split(' ');
+        int count = 0;
+        foreach (var item in array)
+        {
+            if (item.ToLower() == value.ToLower())
+            {
+                count++;
+            }
+        }
+        Console.WriteLine($"la stringa '{value}' appare {(count == 1 ? "una" : count)} volt{(count == 1 ? "a" : "e")} nel testo: {source}");
     }
 
     //private static void WriteHelloWorld()

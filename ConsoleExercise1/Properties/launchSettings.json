@@ -1,7 +1,8 @@
 {
   "profiles": {
     "ConsoleExercise1": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "commandLineArgs": "\"pippo è buono, pippo è simpatico, pippo è meglio di topolino\"\r\npippo"
     }
   }
 }
